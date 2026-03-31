@@ -83,7 +83,7 @@ section {
 }
 
 .home-container {
-    background: url("./img/home-img\ \(1\).jpg");
+    background: url("home-img.jpg");
     height: 100vh;
     background-position: center;
     background-size: cover;
