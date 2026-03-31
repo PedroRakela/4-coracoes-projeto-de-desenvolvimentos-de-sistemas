@@ -248,12 +248,9 @@ section {
     transition: 0.5s linear;
 }
 
-/* =========================================
-   ESTILOS DA PÁGINA DE PRODUTO 
-   ========================================= */
 
 .product-details {
-    padding-top: 15rem; /* Evita que o cabeçalho fixo cubra o conteúdo */
+    padding-top: 15rem; 
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -262,32 +259,31 @@ section {
 .product-details .row {
     display: flex;
     align-items: center;
-    gap: 8rem; /* Espaço bem grande entre a foto e o texto */
+    gap: 8rem; 
     flex-wrap: wrap; 
 }
 
-/* --- LADO ESQUERDO (A IMAGEM) --- */
+
 .product-details .image-container {
     flex: 1 1 45rem; 
     text-align: center;
-    /* Truque: Um brilho dourado no fundo da imagem para tirar o vazio */
     background: radial-gradient(circle, rgba(211, 173, 127, 0.15) 0%, rgba(0,0,0,0) 65%); 
     padding: 5rem;
 }
 
 .product-details .image-container img {
     width: 100%;
-    max-width: 55rem; /* Imagem bem maior que antes */
-    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.8)); /* Sombra mais forte */
+    max-width: 55rem; 
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.8)); 
     transition: 0.4s ease;
 }
 
-/* Efeito de Zoom: Quando passar o mouse, o café aumenta */
+
 .product-details .image-container img:hover {
     transform: scale(1.1); 
 }
 
-/* --- LADO DIREITO (O CONTEÚDO) --- */
+
 .product-details .content {
     flex: 1 1 45rem;
 }
@@ -318,9 +314,9 @@ section {
     margin-bottom: 2rem;
 }
 
-/* Detalhes com marcadores (Ajuda a preencher espaço) */
+
 .features {
-    list-style: none; /* Tira aquelas bolinhas padrão do HTML */
+    list-style: none;
     margin-bottom: 4rem;
 }
 
@@ -330,7 +326,6 @@ section {
     margin-bottom: 1.2rem;
 }
 
-/* --- AS CAIXAS DE TAMANHO (Sua ideia!) --- */
 .tamanhos-container {
     margin-bottom: 4rem;
 }
@@ -355,17 +350,17 @@ section {
     text-align: center;
     cursor: pointer;
     background-color: var(--black);
-    border-radius: 0.8rem; /* Bordas arredondadas para parecer mais moderno */
+    border-radius: 0.8rem; 
     transition: 0.3s;
-    flex: 1; /* Esse comando faz todas as caixas crescerem por igual para preencher o vazio! */
+    flex: 1; 
     min-width: 12rem;
 }
 
-/* O que acontece ao passar o mouse na caixa de preço */
+
 .tamanho-item:hover {
     background-color: var(--main-color);
     border-color: var(--main-color);
-    transform: translateY(-5px); /* Dá um "pulinho" para cima */
+    transform: translateY(-5px); 
 }
 
 .tamanho-item .ml {
@@ -384,10 +379,9 @@ section {
 }
 
 .tamanho-item:hover .preco {
-    color: #fff; /* O preço fica branco para dar contraste com o fundo dourado */
-}
+    color: #fff;}
 
-/* --- BOTÃO DE VOLTAR --- */
+
 .btn-outline {
     background: transparent;
     color: #fff;
